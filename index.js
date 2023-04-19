@@ -10,8 +10,8 @@ app.get('/news-categories', (req, res)=>{
 });
 
 app.get('/', (req, res)=>{
-    res.send('category')
-  });
+  res.send('category')
+});
 
   app.get('/category/:id', (req, res)=>{
     const id =req.params.id;
