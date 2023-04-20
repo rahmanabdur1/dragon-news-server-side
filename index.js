@@ -5,6 +5,9 @@ const cors = require('cors')
 const categories =require('./data/categories.json')
 const news=require('./data/news.json')
 
+app.use(cors())
+// app.use(express.json())
+
 app.get('/news-categories', (req, res)=>{
   res.send(categories)
 });
@@ -38,7 +41,7 @@ app.get('/news/:id',(req, res)=>{
   const selectedNews=news.find(n=>n._id === id)
   res.send(selectedNews)
 })
-app.use(cors())
+
 
 app.listen(port, ()=>{
     console.log("Dragone NEWS server")

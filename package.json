@@ -1,5 +1,5 @@
 {
-  "name": "dragon-news-server",
+  "name": "dragon-news-server-side",
   "version": "1.0.0",
   "main": "index.js",
   "engines":{
